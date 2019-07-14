@@ -1,6 +1,6 @@
 body {
     background: black;
-    /* margin: 0; */
+    margin: 10%;
     color: white;
     font-size: large;
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
@@ -8,6 +8,8 @@ body {
     -webkit-animation: Gradient 7s ease infinite;
     -moz-animation: Gradient 7s ease infinite;
     animation: Gradient 7s ease infinite;
+    /* text-align: center; */
+    text-size-adjust: none;
 }
 
 @-webkit-keyframes Gradient {
@@ -63,18 +65,22 @@ a {
 
 #titleLoad1 {
     font-size: 30px;
+    font-size: 5vh
 }
 
 #titleLoad2 {
     font-size: 50px;
+    font-size: 6vh
 }
 
 #titleLoad3 {
     font-size: 25px;
+    font-size: 5vh
 }
 
 #titleLoad4 {
     font-size: 20px;
+    font-size: 4vh
 }
 
 .titleLoad {
