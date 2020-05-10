@@ -6571,4 +6571,4 @@ var n=i(159);i(5).register("sprite3D",(function(t,e,i,s,r){var o=new n(this.scen
  * @copyright    2018 Photon Storm Ltd.
  * @license      {@link https://github.com/photonstorm/phaser/blob/master/license.txt|MIT License}
  */
-var n=i(29),s=i(203),r=i(16),o=i(15),a=i(159);r.register("sprite3D",(function(t,e){void 0===t&&(t={});var i=o(t,"key",null),r=o(t,"frame",null),h=new a(this.scene,0,0,i,r);return void 0!==e&&(t.add=e),n(this.scene,h,t),s(h,t),h}))},,,,,,function(t,e,i){t.exports=i(265)}]]);
+var n=i(29),s=i(203),r=i(16),o=i(15),a=i(159);r.register("sprite3D",(function(t,e){void 0===t&&(t={});var i=o(t,"key",null),r=o(t,"frame",null),h=new a(this.scene,0,0,i,r);return void 0!==e&&(t.add=e),n(this.scene,h,t),s(h,t),h}))},,,,,,,function(t,e,i){t.exports=i(265)}]]);
