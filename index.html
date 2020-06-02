@@ -1,35 +1,128 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<title>ROHAN</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Raleway", sans-serif
+    }
 
-<head>
-    <script type="text/javascript" src="index.js"></script>
-    <link href="index.css" rel="stylesheet">
-    <title>Rohan</title>
+    .w3-third img {
+        margin-bottom: -6px;
+        opacity: 0.8;
+        cursor: pointer
+    }
 
-</head>
+    .w3-third img:hover {
+        opacity: 1
+    }
+</style>
 
-<body onload="loadStuff()" class="center">
-    <div>
-        <span id="titleLoad1" class="titleLoad">
-        </span>
-        <span id="titleLoad2" class="titleLoad">
-        </span>
-        <span id="titleLoad3" class="titleLoad">
-        </span>
-        <span id="titleLoad4" class="titleLoad">
-        </span>
-        <span class="underscore" class="titleLoad"> _</span>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+        <h3 class="w3-padding-64 w3-center"><b>ROHAN<br>SALUNKE</b></h3>
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+        <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
+        <a href="#blog" onclick="w3_close()" class="w3-bar-item w3-button">BLOG</a>
+
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+        <span class="w3-left w3-padding">ROHAN SALUNKE</span>
+        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+
+    <!-- !PAGE CONTENT! -->
+    <!-- Push down content on small screens -->
+    <!-- About section -->
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32 " style="height:100vh"
+        id="portfolio">
+        <br>
+        <img src="img.png" alt="Me" style="border-radius:20px">
+        <div class="w3-content w3-justify w3-center" style="max-width:600px">
+            <h4>ROHAN SALUNKE</h4>
+            <p>Passionate Software developer with keen interests in solving problems. </p>
+            <!-- Contact section -->
+            <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large">
+                <div class="w3-content" style="max-width:600px">
+                    <h4 class="w3-center"><b>Social</b></h4>
+                    <div class="w3-center">
+
+                        <a href="https://www.medium.com/@rohans16996">
+                            <span class="w3-tag w3-black w3-margin-bottom">Mail</span>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/rohan-salunke">
+                            <span class="w3-tag w3-black w3-margin-bottom">LinkedIn</span>
+                        </a>
+
+                        <a href="https://github.com/okrohan">
+                            <span class="w3-tag w3-black w3-margin-bottom">Github</span>
+                        </a>
+                        <a href="https://www.medium.com/@rohans16996">
+                            <span class="w3-tag w3-black w3-margin-bottom">Medium</span>
+                        </a>
+                        <a href="https://dev.to/okrohan">
+                            <span class="w3-tag w3-black w3-margin-bottom">Dev.to</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- End page content -->
+        </div>
     </div>
-    <div class="absBottom titleLoad">
-        <a href="https://www.medium.com/@rohans16996">Medium</a> |
-        <a href="https://github.com/okrohan">GitHub</a> |
-        <a href="https://www.linkedin.com/in/rohan-salunke">LinkedIn</a> |
-        <a href="mailto:rohans16996@gmail.com?Subject=Hello" target="_top">Mail</a>
-        <a href="https://dev.to/okrohan">
-            <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Rohan Salunke's DEV Profile" height="30" width="30">
-        </a>
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32 "
+        style="height:100vh; overflow: auto" id="blog">
+        <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large">
+            <h1 class="w3-center">BLOGS</h1>
+            <ul class="w3-ul w3-xlarge w3-hoverable">
+                <a href="https://dev.to/okrohan/don-t-be-one-of-these-react-devs-3b46">
+                    <li>Don't be one of these React Devs🙄</li>
+                </a>
+                <a
+                    href="https://medium.com/@rohans16996/why-should-you-care-about-the-new-private-access-specifier-in-es2019-then-vs-now-compared-8f15cb5eb095">
+                    <li>
+                        Why Should you care about the new Private Access Specifier in ES2019: Then vs Now Compared🤩
+                    </li>
+                </a>
+                <a href="https://medium.com/@rohans16996/dark-side-of-the-fat-arrow-function-8d2a477f743b">
+                    <li>Dark Side of Fat Arrow Functions</li>
+                </a>
+            </ul>
+        </div>
     </div>
+    </div>
+
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+    </script>
+
 </body>
-
 
 </html>
